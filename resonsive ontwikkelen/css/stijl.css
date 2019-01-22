@@ -47,7 +47,6 @@ main {
   grid-column: 1/4;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid gap: 2em;
   padding: 20px;
 }
 
@@ -86,7 +85,7 @@ h3 {
   line-height: 21px;
 }
 p {
-  margin: 1;
+  margin: 0;
   font-size: 16px;
   line-height: 21px;
 }
@@ -144,4 +143,14 @@ header {
   background-color: rgb(0,0,255);
   color: #C0C0C0;
 }
+}
+
+@media only screen and (max-width: 768px) {
+  .veel {
+    grid-column: span 1;
+  }
+  .breed {
+    grid-column: span 1;
+  }
+
 }
